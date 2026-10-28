@@ -1,0 +1,119 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 24px;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #28352f;
+    background: linear-gradient(135deg, #f5f0e7, #e4eee5);
+}
+
+.quote-card {
+    width: 100%;
+    max-width: 620px;
+    padding: clamp(28px, 6vw, 60px);
+    text-align: center;
+    background: #fffdf8;
+    border: 1px solid #e6e4da;
+    border-radius: 24px;
+    box-shadow: 0 20px 60px rgba(40, 53, 47, 0.10);
+}
+
+.eyebrow {
+    color: #66816e;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+h1 {
+    margin: 16px 0 8px;
+    font-size: clamp(28px, 5vw, 40px);
+}
+
+.quote-mark {
+    height: 62px;
+    margin-top: 16px;
+    color: #86a58d;
+    font-family: Georgia, serif;
+    font-size: 84px;
+    line-height: 1;
+}
+
+#quote {
+    min-height: 90px;
+    margin: 16px 0;
+    font-family: Georgia, serif;
+    font-size: clamp(20px, 3.5vw, 27px);
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+#author {
+    min-height: 24px;
+    color: #66816e;
+    font-weight: bold;
+}
+
+#status {
+    min-height: 24px;
+    margin: 14px 0;
+    color: #9a5145;
+    font-size: 14px;
+}
+
+button {
+    width: 100%;
+    max-width: 260px;
+    padding: 15px 22px;
+    border: none;
+    border-radius: 12px;
+    background: #355b45;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+button:hover {
+    background: #254533;
+    transform: translateY(-2px);
+}
+
+button:focus-visible {
+    outline: 3px solid #86a58d;
+    outline-offset: 4px;
+}
+
+button:disabled {
+    opacity: 0.65;
+    cursor: wait;
+    transform: none;
+}
+
+.footer-text {
+    margin: 28px 0 0;
+    color: #7a827c;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .quote-card {
+        border-radius: 18px;
+    }
+
+    .eyebrow {
+        letter-spacing: 2px;
+    }
+}
