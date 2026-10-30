@@ -40,4 +40,4 @@ JavaScript functions, API requests using fetch(), asynchronous
 operations, and error handling.
 
 ## Live Demo
-Add your deployed website link here.
+https://sarkaranushree.github.io/random-quote-generator/
